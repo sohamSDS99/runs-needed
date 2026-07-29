@@ -1,0 +1,1021 @@
+{
+  "schemaVersion": 1,
+  "notation": {
+    "x": "successes (mentions)",
+    "n": "trials (runs)",
+    "conf": "confidence level in percent",
+    "lo": "Wilson lower bound, proportion in [0,1]",
+    "hi": "Wilson upper bound, proportion in [0,1]",
+    "halfWidth": "Wilson half-width as a proportion",
+    "widthPts": "(hi-lo)*100, percentage points",
+    "requiredRuns": "smallest integer n with Wilson half-width <= target",
+    "effectiveN": "n / designEffect",
+    "rho": "intracluster correlation coefficient",
+    "runsPerPrompt": "cluster size m = R"
+  },
+  "zValues": {
+    "80": 1.2815515655446004,
+    "90": 1.6448536269514722,
+    "95": 1.959963984540054,
+    "99": 2.5758293035489004
+  },
+  "tolerance": {
+    "proportions": 1e-12,
+    "requiredRuns": 0
+  },
+  "modeA": [
+    {
+      "id": "A01",
+      "kind": "normal",
+      "x": 4,
+      "n": 10,
+      "conf": 95,
+      "lo": 0.16818032970623614,
+      "hi": 0.6873262302663417,
+      "halfWidth": 0.2595729502800528,
+      "widthPts": 51.91459005601055,
+      "resultClass": "WIDTH_UNUSABLE",
+      "clopperPearsonReference": {
+        "lo": 0.1215522581198272,
+        "hi": 0.7376219233930549
+      }
+    },
+    {
+      "id": "A02",
+      "kind": "normal",
+      "x": 21,
+      "n": 50,
+      "conf": 95,
+      "lo": 0.2937500335471198,
+      "hi": 0.5576655823142176,
+      "halfWidth": 0.1319577743835489,
+      "widthPts": 26.391554876709776,
+      "resultClass": "WIDTH_DIRECTIONAL",
+      "clopperPearsonReference": {
+        "lo": 0.2818822411236976,
+        "hi": 0.5679395649344342
+      }
+    },
+    {
+      "id": "A03",
+      "kind": "normal",
+      "x": 42,
+      "n": 100,
+      "conf": 95,
+      "lo": 0.3279838267435473,
+      "hi": 0.5179351329695703,
+      "halfWidth": 0.09497565311301148,
+      "widthPts": 18.995130622602296,
+      "resultClass": "WIDTH_DIRECTIONAL",
+      "clopperPearsonReference": {
+        "lo": 0.3219855393547969,
+        "hi": 0.5228808042760862
+      }
+    },
+    {
+      "id": "A04",
+      "kind": "normal",
+      "x": 13,
+      "n": 30,
+      "conf": 95,
+      "lo": 0.2737748557646652,
+      "hi": 0.6080269299918639,
+      "halfWidth": 0.16712603711359933,
+      "widthPts": 33.42520742271987,
+      "resultClass": "WIDTH_UNUSABLE",
+      "clopperPearsonReference": {
+        "lo": 0.254607549903263,
+        "hi": 0.6257265493907793
+      }
+    },
+    {
+      "id": "A05",
+      "kind": "normal",
+      "x": 5,
+      "n": 12,
+      "conf": 95,
+      "lo": 0.19326031365875668,
+      "hi": 0.6804886874504503,
+      "halfWidth": 0.2436141868958468,
+      "widthPts": 48.72283737916936,
+      "resultClass": "WIDTH_UNUSABLE",
+      "clopperPearsonReference": {
+        "lo": 0.15165222980843013,
+        "hi": 0.7233303143178942
+      }
+    },
+    {
+      "id": "A06",
+      "kind": "normal",
+      "x": 210,
+      "n": 500,
+      "conf": 95,
+      "lo": 0.37750935127740226,
+      "hi": 0.4637105431964461,
+      "halfWidth": 0.04310059595952192,
+      "widthPts": 8.620119191904385,
+      "resultClass": "WIDTH_TRACKABLE",
+      "clopperPearsonReference": {
+        "lo": 0.37632307434599305,
+        "hi": 0.4646283785803857
+      }
+    },
+    {
+      "id": "A07",
+      "kind": "normal",
+      "x": 420,
+      "n": 1000,
+      "conf": 95,
+      "lo": 0.3897726821587803,
+      "hi": 0.4508395991989084,
+      "halfWidth": 0.03053345852006405,
+      "widthPts": 6.106691704012812,
+      "resultClass": "WIDTH_TIGHT",
+      "clopperPearsonReference": {
+        "lo": 0.3891835902226194,
+        "hi": 0.45128876961618847
+      }
+    },
+    {
+      "id": "A08",
+      "kind": "boundary-zero",
+      "x": 0,
+      "n": 10,
+      "conf": 95,
+      "lo": 0.0,
+      "hi": 0.2775327998628892,
+      "halfWidth": 0.1387663999314446,
+      "widthPts": 27.75327998628892,
+      "resultClass": "WIDTH_DIRECTIONAL",
+      "clopperPearsonReference": {
+        "lo": 0.0,
+        "hi": 0.3084971078187607
+      }
+    },
+    {
+      "id": "A09",
+      "kind": "boundary-full",
+      "x": 10,
+      "n": 10,
+      "conf": 95,
+      "lo": 0.7224672001371107,
+      "hi": 1.0,
+      "halfWidth": 0.1387663999314446,
+      "widthPts": 27.753279986288927,
+      "resultClass": "WIDTH_DIRECTIONAL",
+      "clopperPearsonReference": {
+        "lo": 0.6915028921812392,
+        "hi": 1.0
+      }
+    },
+    {
+      "id": "A10",
+      "kind": "boundary-n1-zero",
+      "x": 0,
+      "n": 1,
+      "conf": 95,
+      "lo": 0.0,
+      "hi": 0.7934506856227626,
+      "halfWidth": 0.3967253428113813,
+      "widthPts": 79.34506856227625,
+      "resultClass": "WIDTH_UNUSABLE",
+      "clopperPearsonReference": {
+        "lo": 0.0,
+        "hi": 0.975
+      }
+    },
+    {
+      "id": "A11",
+      "kind": "boundary-n1-full",
+      "x": 1,
+      "n": 1,
+      "conf": 95,
+      "lo": 0.20654931437723745,
+      "hi": 1.0,
+      "halfWidth": 0.3967253428113813,
+      "widthPts": 79.34506856227625,
+      "resultClass": "WIDTH_UNUSABLE",
+      "clopperPearsonReference": {
+        "lo": 0.025000000000000022,
+        "hi": 1.0
+      }
+    },
+    {
+      "id": "A12",
+      "kind": "hard-small-p",
+      "x": 1,
+      "n": 20,
+      "conf": 95,
+      "lo": 0.008881448800795402,
+      "hi": 0.23613119344674205,
+      "halfWidth": 0.11362487232297332,
+      "widthPts": 22.724974464594666,
+      "resultClass": "WIDTH_DIRECTIONAL",
+      "clopperPearsonReference": {
+        "lo": 0.0012650894979498047,
+        "hi": 0.24873276277202777
+      }
+    },
+    {
+      "id": "A13",
+      "kind": "hard-large-p",
+      "x": 19,
+      "n": 20,
+      "conf": 95,
+      "lo": 0.763868806553258,
+      "hi": 0.9911185511992047,
+      "halfWidth": 0.11362487232297334,
+      "widthPts": 22.724974464594673,
+      "resultClass": "WIDTH_DIRECTIONAL",
+      "clopperPearsonReference": {
+        "lo": 0.7512672372279723,
+        "hi": 0.9987349105020502
+      }
+    },
+    {
+      "id": "A14",
+      "kind": "hard-small-p",
+      "x": 3,
+      "n": 30,
+      "conf": 95,
+      "lo": 0.03459988874733419,
+      "hi": 0.25621082579184085,
+      "halfWidth": 0.11080546852225331,
+      "widthPts": 22.161093704450664,
+      "resultClass": "WIDTH_DIRECTIONAL",
+      "clopperPearsonReference": {
+        "lo": 0.021117137029722576,
+        "hi": 0.2652884504742081
+      }
+    },
+    {
+      "id": "A15",
+      "kind": "hard-small-p",
+      "x": 2,
+      "n": 100,
+      "conf": 95,
+      "lo": 0.005501967550162343,
+      "hi": 0.0700117907285439,
+      "halfWidth": 0.03225491158919078,
+      "widthPts": 6.450982317838156,
+      "resultClass": "WIDTH_TIGHT",
+      "clopperPearsonReference": {
+        "lo": 0.0024313368239425428,
+        "hi": 0.07038393247107011
+      }
+    },
+    {
+      "id": "A16",
+      "kind": "hard-large-p",
+      "x": 98,
+      "n": 100,
+      "conf": 95,
+      "lo": 0.929988209271456,
+      "hi": 0.9944980324498376,
+      "halfWidth": 0.032254911589190784,
+      "widthPts": 6.450982317838161,
+      "resultClass": "WIDTH_TIGHT",
+      "clopperPearsonReference": {
+        "lo": 0.9296160675289299,
+        "hi": 0.9975686631760574
+      }
+    },
+    {
+      "id": "A17",
+      "kind": "normal",
+      "x": 500,
+      "n": 1000,
+      "conf": 95,
+      "lo": 0.4690696003681042,
+      "hi": 0.5309303996318958,
+      "halfWidth": 0.030930399631895818,
+      "widthPts": 6.186079926379162,
+      "resultClass": "WIDTH_TIGHT",
+      "clopperPearsonReference": {
+        "lo": 0.46854917297179205,
+        "hi": 0.5314508270282079
+      }
+    },
+    {
+      "id": "A18",
+      "kind": "hard-n3",
+      "x": 1,
+      "n": 3,
+      "conf": 95,
+      "lo": 0.06149194472039615,
+      "hi": 0.7923403991979523,
+      "halfWidth": 0.36542422723877804,
+      "widthPts": 73.08484544775563,
+      "resultClass": "WIDTH_UNUSABLE",
+      "clopperPearsonReference": {
+        "lo": 0.008403758659612643,
+        "hi": 0.9057006759497539
+      }
+    },
+    {
+      "id": "A19",
+      "kind": "conf-80",
+      "x": 4,
+      "n": 10,
+      "conf": 80,
+      "lo": 0.22956557897437518,
+      "hi": 0.598648157443733,
+      "halfWidth": 0.18454128923467894,
+      "widthPts": 36.90825784693578,
+      "resultClass": "WIDTH_UNUSABLE",
+      "clopperPearsonReference": {
+        "lo": 0.18756229664733814,
+        "hi": 0.6457840711273908
+      }
+    },
+    {
+      "id": "A20",
+      "kind": "conf-90",
+      "x": 4,
+      "n": 10,
+      "conf": 90,
+      "lo": 0.19422699187680334,
+      "hi": 0.6483614021398783,
+      "halfWidth": 0.22706720513153747,
+      "widthPts": 45.41344102630749,
+      "resultClass": "WIDTH_UNUSABLE",
+      "clopperPearsonReference": {
+        "lo": 0.15002824080667998,
+        "hi": 0.6964627874359576
+      }
+    },
+    {
+      "id": "A21",
+      "kind": "conf-99",
+      "x": 4,
+      "n": 10,
+      "conf": 99,
+      "lo": 0.12793055959957422,
+      "hi": 0.7518402590614074,
+      "halfWidth": 0.3119548497309166,
+      "widthPts": 62.39096994618332,
+      "resultClass": "WIDTH_UNUSABLE",
+      "clopperPearsonReference": {
+        "lo": 0.0767681691398201,
+        "hi": 0.809083668662316
+      }
+    },
+    {
+      "id": "A22",
+      "kind": "boundary-zero-n1000",
+      "x": 0,
+      "n": 1000,
+      "conf": 95,
+      "lo": 0.0,
+      "hi": 0.0038267584855551234,
+      "halfWidth": 0.0019133792427775617,
+      "widthPts": 0.38267584855551234,
+      "resultClass": "WIDTH_TIGHT",
+      "clopperPearsonReference": {
+        "lo": 0.0,
+        "hi": 0.003682083896865671
+      }
+    },
+    {
+      "id": "A23",
+      "kind": "boundary-full-n2",
+      "x": 2,
+      "n": 2,
+      "conf": 95,
+      "lo": 0.34238022750665303,
+      "hi": 1.0,
+      "halfWidth": 0.32880988624667346,
+      "widthPts": 65.7619772493347,
+      "resultClass": "WIDTH_UNUSABLE",
+      "clopperPearsonReference": {
+        "lo": 0.15811388300841903,
+        "hi": 1.0
+      }
+    },
+    {
+      "id": "A24",
+      "kind": "normal",
+      "x": 69,
+      "n": 71,
+      "conf": 95,
+      "lo": 0.9029849988335054,
+      "hi": 0.9922407364173166,
+      "halfWidth": 0.04462786879190557,
+      "widthPts": 8.925573758381123,
+      "resultClass": "WIDTH_TRACKABLE",
+      "clopperPearsonReference": {
+        "lo": 0.9019199313429451,
+        "hi": 0.9965702092287638
+      }
+    },
+    {
+      "id": "A25",
+      "kind": "normal",
+      "x": 85,
+      "n": 95,
+      "conf": 95,
+      "lo": 0.8169794293520014,
+      "hi": 0.9418114757484146,
+      "halfWidth": 0.06241602319820664,
+      "widthPts": 12.483204639641322,
+      "resultClass": "WIDTH_TRACKABLE",
+      "clopperPearsonReference": {
+        "lo": 0.814926343160892,
+        "hi": 0.9483552642371698
+      }
+    },
+    {
+      "id": "A26",
+      "kind": "normal",
+      "x": 36,
+      "n": 73,
+      "conf": 95,
+      "lo": 0.3817085981228822,
+      "hi": 0.6052775937669224,
+      "halfWidth": 0.11178449782202005,
+      "widthPts": 22.356899564404014,
+      "resultClass": "WIDTH_DIRECTIONAL",
+      "clopperPearsonReference": {
+        "lo": 0.3740471361613669,
+        "hi": 0.6128270954856125
+      }
+    },
+    {
+      "id": "A27",
+      "kind": "conf-99-large",
+      "x": 500,
+      "n": 1000,
+      "conf": 99,
+      "lo": 0.45940700521208483,
+      "hi": 0.5405929947879151,
+      "halfWidth": 0.040592994787915164,
+      "widthPts": 8.118598957583028,
+      "resultClass": "WIDTH_TRACKABLE",
+      "clopperPearsonReference": {
+        "lo": 0.45885255330704516,
+        "hi": 0.5411474466929549
+      }
+    },
+    {
+      "id": "A28",
+      "kind": "hard-tiny-p",
+      "x": 1,
+      "n": 1000,
+      "conf": 95,
+      "lo": 0.00017654637062607852,
+      "hi": 0.0056425585979579355,
+      "halfWidth": 0.0027330061136659283,
+      "widthPts": 0.5466012227331858,
+      "resultClass": "WIDTH_TIGHT",
+      "clopperPearsonReference": {
+        "lo": 2.5317487491294065e-05,
+        "hi": 0.005558924279826672
+      }
+    },
+    {
+      "id": "A29",
+      "kind": "normal",
+      "x": 4,
+      "n": 20,
+      "conf": 95,
+      "lo": 0.08065766257979809,
+      "hi": 0.4160174322518936,
+      "halfWidth": 0.16767988483604776,
+      "widthPts": 33.53597696720955,
+      "resultClass": "WIDTH_UNUSABLE",
+      "clopperPearsonReference": {
+        "lo": 0.05733399705003278,
+        "hi": 0.4366140029966683
+      }
+    },
+    {
+      "id": "A30",
+      "kind": "normal",
+      "x": 6,
+      "n": 15,
+      "conf": 95,
+      "lo": 0.1982449614134158,
+      "hi": 0.6425316987937539,
+      "halfWidth": 0.2221433686901691,
+      "widthPts": 44.428673738033815,
+      "resultClass": "WIDTH_UNUSABLE",
+      "clopperPearsonReference": {
+        "lo": 0.1633643238595135,
+        "hi": 0.6771302337937184
+      }
+    }
+  ],
+  "modeB": [
+    {
+      "id": "B01",
+      "kind": "normal",
+      "planningPct": 50.0,
+      "targetHalfWidthPts": 10.0,
+      "conf": 95,
+      "requiredRuns": 93,
+      "halfWidthAtN": 0.099583510949021,
+      "halfWidthAtNMinus1": 0.10010168490792465,
+      "resultClass": "BUDGET_EASY"
+    },
+    {
+      "id": "B02",
+      "kind": "normal",
+      "planningPct": 50.0,
+      "targetHalfWidthPts": 5.0,
+      "conf": 95,
+      "requiredRuns": 381,
+      "halfWidthAtN": 0.049954793634982,
+      "halfWidthAtNMinus1": 0.05001982347831429,
+      "resultClass": "BUDGET_REAL"
+    },
+    {
+      "id": "B03",
+      "kind": "normal",
+      "planningPct": 42.0,
+      "targetHalfWidthPts": 5.0,
+      "conf": 95,
+      "requiredRuns": 371,
+      "halfWidthAtN": 0.04997138445504964,
+      "halfWidthAtNMinus1": 0.05003819282984351,
+      "resultClass": "BUDGET_REAL"
+    },
+    {
+      "id": "B04",
+      "kind": "normal",
+      "planningPct": 42.0,
+      "targetHalfWidthPts": 15.0,
+      "conf": 95,
+      "requiredRuns": 38,
+      "halfWidthAtN": 0.14972918830987927,
+      "halfWidthAtNMinus1": 0.15155562137839146,
+      "resultClass": "BUDGET_EASY"
+    },
+    {
+      "id": "B05",
+      "kind": "normal",
+      "planningPct": 10.0,
+      "targetHalfWidthPts": 5.0,
+      "conf": 95,
+      "requiredRuns": 141,
+      "halfWidthAtN": 0.049995086961437604,
+      "halfWidthAtNMinus1": 0.05017642290313815,
+      "resultClass": "BUDGET_REAL"
+    },
+    {
+      "id": "B06",
+      "kind": "conf-90",
+      "planningPct": 50.0,
+      "targetHalfWidthPts": 10.0,
+      "conf": 90,
+      "requiredRuns": 65,
+      "halfWidthAtN": 0.099950540486999,
+      "halfWidthAtNMinus1": 0.10069694566600189,
+      "resultClass": "BUDGET_EASY"
+    },
+    {
+      "id": "B07",
+      "kind": "conf-99",
+      "planningPct": 50.0,
+      "targetHalfWidthPts": 5.0,
+      "conf": 99,
+      "requiredRuns": 657,
+      "halfWidthAtN": 0.049994528450554465,
+      "halfWidthAtNMinus1": 0.05003223826700611,
+      "resultClass": "BUDGET_HEAVY"
+    },
+    {
+      "id": "B08",
+      "kind": "conf-80",
+      "planningPct": 50.0,
+      "targetHalfWidthPts": 10.0,
+      "conf": 80,
+      "requiredRuns": 40,
+      "halfWidthAtN": 0.09929750755374726,
+      "halfWidthAtNMinus1": 0.1005116849897682,
+      "resultClass": "BUDGET_EASY"
+    },
+    {
+      "id": "B09",
+      "kind": "hard-extreme-p",
+      "planningPct": 97.0,
+      "targetHalfWidthPts": 2.0,
+      "conf": 95,
+      "requiredRuns": 303,
+      "halfWidthAtN": 0.01997338265313489,
+      "halfWidthAtNMinus1": 0.020008847481013604,
+      "resultClass": "BUDGET_REAL"
+    },
+    {
+      "id": "B10",
+      "kind": "boundary-p0",
+      "planningPct": 0.0,
+      "targetHalfWidthPts": 10.0,
+      "conf": 95,
+      "requiredRuns": 16,
+      "halfWidthAtN": 0.09680384026721825,
+      "halfWidthAtNMinus1": 0.10194165051792431,
+      "resultClass": "BUDGET_EASY"
+    },
+    {
+      "id": "B11",
+      "kind": "boundary-p100",
+      "planningPct": 100.0,
+      "targetHalfWidthPts": 10.0,
+      "conf": 95,
+      "requiredRuns": 16,
+      "halfWidthAtN": 0.09680384026721825,
+      "halfWidthAtNMinus1": 0.10194165051792431,
+      "resultClass": "BUDGET_EASY"
+    },
+    {
+      "id": "B12",
+      "kind": "boundary-w-max",
+      "planningPct": 50.0,
+      "targetHalfWidthPts": 50.0,
+      "conf": 95,
+      "requiredRuns": 1,
+      "halfWidthAtN": 0.445379244471148,
+      "halfWidthAtNMinus1": null,
+      "resultClass": "BUDGET_EASY"
+    },
+    {
+      "id": "B13",
+      "kind": "normal",
+      "planningPct": 50.0,
+      "targetHalfWidthPts": 25.0,
+      "conf": 95,
+      "requiredRuns": 12,
+      "halfWidthAtN": 0.2462184023662939,
+      "halfWidthAtNMinus1": 0.25437814713926965,
+      "resultClass": "BUDGET_EASY"
+    },
+    {
+      "id": "B14",
+      "kind": "boundary-w-floor",
+      "planningPct": 50.0,
+      "targetHalfWidthPts": 0.5,
+      "conf": 95,
+      "requiredRuns": 38411,
+      "halfWidthAtN": 0.004999983518590262,
+      "halfWidthAtNMinus1": 0.005000048598660218,
+      "resultClass": "BUDGET_UNREALISTIC"
+    },
+    {
+      "id": "B15",
+      "kind": "boundary-w-floor-99",
+      "planningPct": 50.0,
+      "targetHalfWidthPts": 0.5,
+      "conf": 99,
+      "requiredRuns": 66343,
+      "halfWidthAtN": 0.004999974796844181,
+      "halfWidthAtNMinus1": 0.005000012476262645,
+      "resultClass": "BUDGET_UNREALISTIC"
+    },
+    {
+      "id": "B16",
+      "kind": "normal",
+      "planningPct": 42.0,
+      "targetHalfWidthPts": 2.0,
+      "conf": 95,
+      "requiredRuns": 2336,
+      "halfWidthAtN": 0.01999875146214718,
+      "halfWidthAtNMinus1": 0.02000302654392438,
+      "resultClass": "BUDGET_UNREALISTIC"
+    },
+    {
+      "id": "B17",
+      "kind": "hard-small-p",
+      "planningPct": 5.0,
+      "targetHalfWidthPts": 5.0,
+      "conf": 95,
+      "requiredRuns": 83,
+      "halfWidthAtN": 0.04997420973227913,
+      "halfWidthAtNMinus1": 0.05031088187670726,
+      "resultClass": "BUDGET_EASY"
+    },
+    {
+      "id": "B18",
+      "kind": "hard-small-p",
+      "planningPct": 5.0,
+      "targetHalfWidthPts": 10.0,
+      "conf": 95,
+      "requiredRuns": 25,
+      "halfWidthAtN": 0.09959426439771729,
+      "halfWidthAtNMinus1": 0.10202426140877102,
+      "resultClass": "BUDGET_EASY"
+    },
+    {
+      "id": "B19",
+      "kind": "normal",
+      "planningPct": 10.0,
+      "targetHalfWidthPts": 10.0,
+      "conf": 95,
+      "requiredRuns": 37,
+      "halfWidthAtN": 0.09940173168282165,
+      "halfWidthAtNMinus1": 0.10082224399361318,
+      "resultClass": "BUDGET_EASY"
+    },
+    {
+      "id": "B20",
+      "kind": "normal",
+      "planningPct": 75.0,
+      "targetHalfWidthPts": 10.0,
+      "conf": 95,
+      "requiredRuns": 70,
+      "halfWidthAtN": 0.0996166358638654,
+      "halfWidthAtNMinus1": 0.10030983032847961,
+      "resultClass": "BUDGET_EASY"
+    }
+  ],
+  "designEffectA": [
+    {
+      "id": "D01",
+      "kind": "mixed",
+      "planningPct": 42.0,
+      "n": 50,
+      "rho": 0.1,
+      "runsPerPrompt": 10,
+      "conf": 95,
+      "designEffect": 1.9,
+      "effectiveN": 26.315789473684212,
+      "lo": 0.25374262426094407,
+      "hi": 0.6066383271213356,
+      "halfWidth": 0.17644785143019578,
+      "widthPts": 35.28957028603915,
+      "resultClass": "WIDTH_UNUSABLE"
+    },
+    {
+      "id": "D02",
+      "kind": "mixed",
+      "planningPct": 42.0,
+      "n": 50,
+      "rho": 0.2,
+      "runsPerPrompt": 50,
+      "conf": 95,
+      "designEffect": 10.8,
+      "effectiveN": 4.62962962962963,
+      "lo": 0.12193783936438068,
+      "hi": 0.7906187647739658,
+      "halfWidth": 0.33434046270479256,
+      "widthPts": 66.86809254095851,
+      "resultClass": "WIDTH_UNUSABLE"
+    },
+    {
+      "id": "D03",
+      "kind": "mixed",
+      "planningPct": 42.0,
+      "n": 300,
+      "rho": 0.2,
+      "runsPerPrompt": 30,
+      "conf": 95,
+      "designEffect": 6.800000000000001,
+      "effectiveN": 44.11764705882352,
+      "lo": 0.28657553365305544,
+      "hi": 0.5662402476264191,
+      "halfWidth": 0.13983235698668187,
+      "widthPts": 27.966471397336367,
+      "resultClass": "WIDTH_DIRECTIONAL"
+    },
+    {
+      "id": "D04",
+      "kind": "mixed",
+      "planningPct": 42.0,
+      "n": 100,
+      "rho": 0.1,
+      "runsPerPrompt": 10,
+      "conf": 95,
+      "designEffect": 1.9,
+      "effectiveN": 52.631578947368425,
+      "lo": 0.2966008909507534,
+      "hi": 0.5542827702724198,
+      "halfWidth": 0.12884093966083315,
+      "widthPts": 25.768187932166637,
+      "resultClass": "WIDTH_DIRECTIONAL"
+    },
+    {
+      "id": "D05",
+      "kind": "rho-zero-identity",
+      "planningPct": 42.0,
+      "n": 50,
+      "rho": 0.0,
+      "runsPerPrompt": 50,
+      "conf": 95,
+      "designEffect": 1.0,
+      "effectiveN": 50.0,
+      "lo": 0.2937500335471198,
+      "hi": 0.5576655823142176,
+      "halfWidth": 0.1319577743835489,
+      "widthPts": 26.391554876709776,
+      "resultClass": "WIDTH_DIRECTIONAL"
+    },
+    {
+      "id": "D06",
+      "kind": "mixed",
+      "planningPct": 50.0,
+      "n": 1000,
+      "rho": 0.05,
+      "runsPerPrompt": 20,
+      "conf": 95,
+      "designEffect": 1.9500000000000002,
+      "effectiveN": 512.8205128205128,
+      "lo": 0.45688634452772964,
+      "hi": 0.5431136554722703,
+      "halfWidth": 0.04311365547227035,
+      "widthPts": 8.622731094454068,
+      "resultClass": "WIDTH_TRACKABLE"
+    }
+  ],
+  "designEffectB": [
+    {
+      "id": "N01",
+      "planningPct": 50.0,
+      "targetHalfWidthPts": 10.0,
+      "conf": 95,
+      "rho": 0.1,
+      "runsPerPrompt": 10,
+      "designEffect": 1.9,
+      "baseRuns": 93,
+      "requiredRuns": 177
+    },
+    {
+      "id": "N02",
+      "planningPct": 42.0,
+      "targetHalfWidthPts": 5.0,
+      "conf": 95,
+      "rho": 0.2,
+      "runsPerPrompt": 20,
+      "designEffect": 4.800000000000001,
+      "baseRuns": 371,
+      "requiredRuns": 1781
+    },
+    {
+      "id": "N03",
+      "planningPct": 50.0,
+      "targetHalfWidthPts": 5.0,
+      "conf": 95,
+      "rho": 0.0,
+      "runsPerPrompt": 10,
+      "designEffect": 1.0,
+      "baseRuns": 381,
+      "requiredRuns": 381
+    }
+  ],
+  "rejects": [
+    {
+      "id": "R01",
+      "mode": "A",
+      "input": {
+        "x": 5,
+        "n": 4,
+        "conf": 95
+      },
+      "errorCode": "X_EXCEEDS_N"
+    },
+    {
+      "id": "R02",
+      "mode": "A",
+      "input": {
+        "x": -1,
+        "n": 10,
+        "conf": 95
+      },
+      "errorCode": "X_NEGATIVE"
+    },
+    {
+      "id": "R03",
+      "mode": "A",
+      "input": {
+        "x": 2,
+        "n": 0,
+        "conf": 95
+      },
+      "errorCode": "N_BELOW_MIN"
+    },
+    {
+      "id": "R04",
+      "mode": "A",
+      "input": {
+        "x": 2.5,
+        "n": 10,
+        "conf": 95
+      },
+      "errorCode": "X_NOT_INTEGER"
+    },
+    {
+      "id": "R05",
+      "mode": "A",
+      "input": {
+        "x": 2,
+        "n": 10.5,
+        "conf": 95
+      },
+      "errorCode": "N_NOT_INTEGER"
+    },
+    {
+      "id": "R06",
+      "mode": "A",
+      "input": {
+        "x": 2,
+        "n": 10,
+        "conf": 97
+      },
+      "errorCode": "CONF_NOT_ALLOWED"
+    },
+    {
+      "id": "R07",
+      "mode": "A",
+      "input": {
+        "x": 2,
+        "n": 200001,
+        "conf": 95
+      },
+      "errorCode": "N_ABOVE_MAX"
+    },
+    {
+      "id": "R08",
+      "mode": "B",
+      "input": {
+        "planningPct": 50,
+        "targetHalfWidthPts": 0.4,
+        "conf": 95
+      },
+      "errorCode": "TARGET_BELOW_MIN"
+    },
+    {
+      "id": "R09",
+      "mode": "B",
+      "input": {
+        "planningPct": 50,
+        "targetHalfWidthPts": 50.1,
+        "conf": 95
+      },
+      "errorCode": "TARGET_ABOVE_MAX"
+    },
+    {
+      "id": "R10",
+      "mode": "B",
+      "input": {
+        "planningPct": 100.1,
+        "targetHalfWidthPts": 5,
+        "conf": 95
+      },
+      "errorCode": "PLANNING_OUT_OF_RANGE"
+    },
+    {
+      "id": "R11",
+      "mode": "B",
+      "input": {
+        "planningPct": -0.1,
+        "targetHalfWidthPts": 5,
+        "conf": 95
+      },
+      "errorCode": "PLANNING_OUT_OF_RANGE"
+    },
+    {
+      "id": "R12",
+      "mode": "A",
+      "input": {
+        "x": 2,
+        "n": 10,
+        "conf": 95,
+        "rho": 0.95
+      },
+      "errorCode": "RHO_OUT_OF_RANGE"
+    },
+    {
+      "id": "R13",
+      "mode": "A",
+      "input": {
+        "x": 2,
+        "n": 10,
+        "conf": 95,
+        "rho": -0.01
+      },
+      "errorCode": "RHO_OUT_OF_RANGE"
+    },
+    {
+      "id": "R14",
+      "mode": "A",
+      "input": {
+        "x": 2,
+        "n": 10,
+        "conf": 95,
+        "design": "mixed",
+        "runsPerPrompt": 0
+      },
+      "errorCode": "RUNS_PER_PROMPT_BELOW_MIN"
+    },
+    {
+      "id": "R15",
+      "mode": "A",
+      "input": {
+        "x": 2,
+        "n": 10,
+        "conf": 95,
+        "design": "mixed",
+        "runsPerPrompt": 11
+      },
+      "errorCode": "RUNS_PER_PROMPT_EXCEEDS_N"
+    }
+  ]
+}

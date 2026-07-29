@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Read the statistical specification first
+    url: https://github.com/sohamSDS99/runs-needed/blob/main/STATS_SPEC.md
+    about: Formulas, sources, edge cases, and the two known weak points are all documented. Section 7 lists everything flagged as an assumption.
