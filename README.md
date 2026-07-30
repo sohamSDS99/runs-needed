@@ -16,9 +16,9 @@ SparkToro and Gumshoe.ai ran 2,961 prompts across ChatGPT, Claude, and Google AI
 
 This is roughly 200 lines of arithmetic that answers it.
 
-## Status of this repository
+## What's in this repository
 
-This is a **specification repository**. The four documents below are complete and verified; the application is built from them by executing `CLAUDE_CODE_TASKS.md` in order.
+The **built application** — a Next.js static export under `src/` — together with the complete specification it was generated from. The four documents below are the normative source; the app was built by executing `CLAUDE_CODE_TASKS.md` in order, and every machine-checkable acceptance criterion in that file passes (`npm run verify`).
 
 | Document | What it is |
 |---|---|
@@ -28,6 +28,17 @@ This is a **specification repository**. The four documents below are complete an
 | [`CLAUDE_CODE_TASKS.md`](CLAUDE_CODE_TASKS.md) | 26 atomic build tasks, each with the exact files it touches and machine-checkable acceptance criteria |
 | [`ITERATION_LOG.md`](ITERATION_LOG.md) | The refinement passes these documents went through, with the defects each hostile read caught |
 | [`prompts/`](prompts/) | One session-opening brief per roadmap phase, for driving the build with an AI coding agent |
+
+## Build and run
+
+```bash
+npm install
+npm run dev        # local dev server at http://localhost:3000
+npm run build      # static export to out/
+npm run verify     # types, lint, unit + property tests, build, static + bundle checks, e2e (Chromium/Firefox/WebKit)
+```
+
+`npm run verify` is the full gate CI runs. The interpretation copy is generated verbatim from `PRD.md` §5 and a test fails on any drift; the numeric fixtures are cross-checked against SciPy and statsmodels by `scripts/verify_fixtures.py`.
 
 ## Verify the math yourself
 
