@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+html {
+  color-scheme: light dark;
+}
+
+/* A consistent keyboard focus ring on every focusable element (PRD §9.1),
+   blue-600 at >=3:1 against both light and dark surfaces. */
+:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
